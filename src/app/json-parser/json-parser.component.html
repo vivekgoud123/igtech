@@ -1,0 +1,12 @@
+<div class="json-parser-container">
+    <h1>JSON Parser</h1>
+    <textarea [(ngModel)]="jsonInput" placeholder="Paste your JSON here..."></textarea>
+    <div class="buttons">
+      <button color="primary" (click)="formatJson()">Format JSON</button>
+      <button color="warn" (click)="clearJson()">Clear</button>
+    </div>
+    <pre *ngIf="formattedJson">{{ formattedJson }}</pre>
+    <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+    <button routerLink="/home"  color="accent">Back to Home</button>
+  </div>
+  

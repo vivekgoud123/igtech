@@ -1,0 +1,10 @@
+<div class="pdf-container">
+    <h1>Dynamic HTML to PDF</h1>
+  
+    <textarea [(ngModel)]="userHtml" placeholder="Enter your HTML here..." rows="6"></textarea>
+  
+    <div id="pdf-content" class="preview" [innerHTML]="userHtml"></div>
+  
+    <button (click)="downloadPDF()">Download PDF</button>
+  </div>
+  
